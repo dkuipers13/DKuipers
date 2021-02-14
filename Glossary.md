@@ -96,3 +96,42 @@ file <filename>
 mount -t device dir
 ```
 
+**cd** - Goes back to home directory. Add a option after cd to go into desired directory. Add '..' after cd to go up one directory.
+```
+#Move into users downloads directory
+cd /home/<user>/Downloads
+```
+**man** - shows the manual of desired command.
+```
+#Shows the manual of the copy command
+man cp
+```
+**touch**  - creates a file with the <filename> after touch.
+```
+#Create a file named <filename>
+touch <filename>
+```
+
+**uniq** - filter to report or omit repeated lines
+```
+#Counts all lines of file <filename>  by number of occurences.
+uniq -c <filename>
+```
+
+**wc** - prints the number of lines, words, and bytes for a file.
+```
+#Shows the number of words in file <filename>
+wc -w <filename>
+```
+
+**find** - search for a file throughout the directorys.
+```
+#
+```
+
+**wget** - download a file off the web from the provided link.
+```
+#Downloads file <filename.com>
+wget <filename.com>
+```
+
