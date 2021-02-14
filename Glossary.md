@@ -135,3 +135,32 @@ wc -w <filename>
 wget <filename.com>
 ```
 
+**echo** - display line of text.
+```
+#Displays the string "String".
+echo String
+```
+
+**git add** - add files to the git index to be prepared to be uploaded to git.
+```
+#Add file <filename> to index to be uploaded to git.
+git add <filename>
+```
+
+**git status** - tracks changes of files in git repository.
+```
+#Check to see if there have been changes to git repository.
+git status
+```
+
+**git commit -m "TEXT"** - Commit changes from the git add to update the main repository.
+```
+#Commit changes to main git repository with the update "Date"
+git commit -m "Date"
+```
+
+**git push** - Push the changes from the git commit up to the git repository.
+```
+#Push changes up to git.com repository.
+git push
+```
