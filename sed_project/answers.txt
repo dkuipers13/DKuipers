@@ -1,9 +1,9 @@
 1: cat /usr/share/dict/american-english | sed -e 's/color/colour/g' -e 's/honor/honour/g' -e 's/behavior/behaviour/g' -e 's/humor/humour/g' > new_dict
 2: sed 's/FOOPS/if/g' MyFile.c | sed 's/BEEPBOOP/\/**/g' MyFile.c
-3: sed 's/\<script\>/.*\<script\>/g'
-4:
-5:
-6:
-7:
+3: sed -E '/<script/,/<\/<script>/g' faculty.html
+4: sed -n /define/p /usr/include/limits.h > clean_limits.h 
+5: sed -i.ORIG 's/gattaca/@@GREAT MOVIE@@/g' dna.txt
+6: sed -f scriptFile.sed /home/woodriir/241/file > decoded
+7: sed '50!G;h;$!d' /home/woodriir/241/lyrics > ending_lyrics
 8:
 
