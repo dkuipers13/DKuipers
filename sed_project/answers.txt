@@ -4,6 +4,22 @@
 4: sed -n /define/p /usr/include/limits.h > clean_limits.h 
 5: sed -i.ORIG 's/gattaca/@@GREAT MOVIE@@/g' dna.txt
 6: sed -f scriptFile.sed /home/woodriir/241/file > decoded
-7: sed '50!G;h;$!d' /home/woodriir/241/lyrics > ending_lyrics
+7: sed '50!G;h;$!d' /home/woodriir/241/lyrics > ending_lyric#!/bin/bash
 8:
+  
+lscpu | sed -n /CPU\(s\)/p
+echo "====="
+echo "Memory:"
+echo "====="
+echo "                total       used        free       shared         buff/cache         available "
+free -h | sed -n /Mem:/p | sed -E 's/Gi/ Gigabytes/g'
+echo " "
+echo "Disks:"
+echo "====="
+df -h | sed -n /T/p
+echo " "
+echo "Date:"
+echo "====="
+dates
+
 
